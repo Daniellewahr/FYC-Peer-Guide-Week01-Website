@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before { /*universal selector*/
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* elements will inherit whatever the parent box-sizing is, as specificed in the body*/
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box; 
+    /* background-color: lightblue; */
+    background: linear-gradient(#9198e5, #e66465);
+    /* margin: 0; */
+    /* padding: 0; */
+    /* sets its so paddings and borders do not add to the width/height of the total height*/
+    /* margin-top: 2rem;
+    margin-bottom: 2rem; */
+    /* shortcut  */
+    /* margin: 2rem 0 2rem 0; */
+    font-family: sans-serif;
+    color: #2d022f;
+    padding: 2rem 0 2rem 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: Bebas Neue;
+    font-size: 350%;
+    transition: all 500ms;
+}
+
+.title:hover {
+    font-size:400%;
+}
+
+.container {
+    display: flex;
+    padding: 0 1rem 0 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* display: inline-block; */
+    min-height: 25rem;
+    width: 20rem;
+    text-align: center;
+    background: linear-gradient(#ffffff, #9198e5);
+    /* padding: 0.5rem; */
+    margin: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 1s;
+    overflow: hidden;
+    /* position: relative; */
+
+}
+
+/* .card:hover {
+    color: white; 
+} */
+
+.card:hover > .photo {
+    height: 12rem;
+    width: 20rem;
+}
+
+.card:hover > .text {
+    /* display: visible; */
+    opacity: 75%;
+    /* height: 100%; */
+}
+
+.card:hover > .placeholder {
+    opacity: 0;
+}
+
+
+.photo {
+    height: 10rem;
+    width: inherit; /* inherits from the .card width */
+    object-fit: cover;
+    object-position: 50% 17%;
+    /* margin-bottom: 0.5rem; */
+    transition: 500ms;
+
+    /* margin-top: 1rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 3px solid white; */
+}
+
+.header {
+    padding: 0.5rem;
+    /* background-color: white; */
+}
+
+.age {
+    font-weight: 400;
+    font-size: 0.9rem;
+    background-color: #2d022f;
+    color: white;
+    border-radius: 50%;
+    padding: 0.4rem;
+    border: white 3px solid;
+}
+
+
+.text {
+    /* display: hidden; */
+    opacity: 0;
+    text-align: left;
+    font-weight: 400;
+    /* top right bottom left */
+    margin: 0.5rem 1rem 1rem 1rem;
+    transition: 0.5s;
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    min-height: 7.5rem;
+}
+
+.placeholder {
+    opacity: 1;
+    transition: 500ms;
+}
