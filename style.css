@@ -26,6 +26,17 @@ body {
     padding: 2rem 0 2rem 0;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+.navigation-button {
+    color: white;
+    background-color: black;
+    padding: 1rem 2rem;
+}
+
 .title {
     text-align: center;
     margin-top: 3rem;
