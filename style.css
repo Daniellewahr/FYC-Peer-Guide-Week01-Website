@@ -124,8 +124,8 @@ a {
 }
 
 .project-card:hover {
-    width: 30rem;
-    height: 20rem;
+    width: 40rem;
+    height: 27rem;
 }
 
 .project-card:hover > .project-placeholder {
@@ -141,9 +141,10 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    width: 26rem;
+    width: 35rem;
+    /* height: 6rem; */
     transition: 0.2s;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 .project-placeholder {
@@ -153,6 +154,7 @@ a {
     transform: translate(-50%, -50%);
     opacity: 100%;
     transition: 0.2s;
+    font-size: 1.5rem;
 }
 
 
@@ -199,7 +201,6 @@ a {
     background-color: white;
     padding: 0.7rem;
     border-radius: 0.5rem;
-    min-height: 7rem;
 }
 
 .placeholder {
